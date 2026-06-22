@@ -73,7 +73,7 @@ cd ~/pilgrims-v17
 # (if from repository)
 git clone https://github.com/your-repo/pilgrims-v17.git .
 
-# Atau copy manual
+# Or copy manually
 cp -r /path/to/pilgrims-v17/* ~/pilgrims-v17/
 ```
 
