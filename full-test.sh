@@ -258,7 +258,7 @@ run_test "Load core/themes.sh" "bash -c 'source core/themes.sh && type apply_the
 run_test "Load core/stealth_profiles.sh" "bash -c 'source core/stealth_profiles.sh && type apply_stealth_profile'" true
 
 # Test module-web can be loaded
-run_test "Load module-web" "bash -c 'source modules/module-web/pilgrims-web.sh' 2>&1 | grep -v 'No such file' || true" false
+run_test "Load module-web" "bash -n modules/module-web/pilgrims-web.sh" true
 
 echo ""
 

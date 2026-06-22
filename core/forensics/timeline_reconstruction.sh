@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# Source UI helpers (for print_*) if not already sourced
+if ! command -v print_success &>/dev/null; then
+    source "$(dirname "${BASH_SOURCE[0]}")/../ui.sh" 2>/dev/null || true
+fi
 # ============================================================================
 # TIMELINE RECONSTRUCTION - Event Correlation & Visualization
 # ============================================================================
@@ -29,7 +34,7 @@ timeline_reconstruction() {
     
     # Source 1: System logs
     echo -e "    ${DIM}  → System logs...${NC}"
-    local sys_events=$((RANDOM % 500 + 200))
+    local sys_events=$((RANDOM % 50 + 30))
     for i in $(seq 1 $sys_events); do
         local timestamp=$(date -d "-$((RANDOM % 168)) hours" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date '+%Y-%m-%d %H:%M:%S')
         local source="system"
@@ -45,7 +50,7 @@ timeline_reconstruction() {
     
     # Source 2: Application logs
     echo -e "    ${DIM}  → Application logs...${NC}"
-    local app_events=$((RANDOM % 400 + 150))
+    local app_events=$((RANDOM % 40 + 20))
     for i in $(seq 1 $app_events); do
         local timestamp=$(date -d "-$((RANDOM % 168)) hours" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date '+%Y-%m-%d %H:%M:%S')
         local source="application"
@@ -61,7 +66,7 @@ timeline_reconstruction() {
     
     # Source 3: Network logs
     echo -e "    ${DIM}  → Network logs...${NC}"
-    local net_events=$((RANDOM % 600 + 300))
+    local net_events=$((RANDOM % 60 + 40))
     for i in $(seq 1 $net_events); do
         local timestamp=$(date -d "-$((RANDOM % 168)) hours" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date '+%Y-%m-%d %H:%M:%S')
         local source="network"
@@ -79,7 +84,7 @@ timeline_reconstruction() {
     
     # Source 4: File system events
     echo -e "    ${DIM}  → File system events...${NC}"
-    local fs_events=$((RANDOM % 300 + 100))
+    local fs_events=$((RANDOM % 30 + 20))
     for i in $(seq 1 $fs_events); do
         local timestamp=$(date -d "-$((RANDOM % 168)) hours" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date '+%Y-%m-%d %H:%M:%S')
         local source="filesystem"
@@ -96,7 +101,7 @@ timeline_reconstruction() {
     
     # Source 5: Authentication logs
     echo -e "    ${DIM}  → Authentication logs...${NC}"
-    local auth_events=$((RANDOM % 200 + 80))
+    local auth_events=$((RANDOM % 25 + 15))
     for i in $(seq 1 $auth_events); do
         local timestamp=$(date -d "-$((RANDOM % 168)) hours" '+%Y-%m-%d %H:%M:%S' 2>/dev/null || date '+%Y-%m-%d %H:%M:%S')
         local source="authentication"
