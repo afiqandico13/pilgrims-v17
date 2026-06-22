@@ -17,17 +17,17 @@
 
 ## 📋 Overview
 
-PILGRIMS v17.0 adalah **ultimate security framework** yang menggabungkan **71 capabilities** dalam satu tool terintegrasi. Framework ini dirancang untuk professional security researchers, penetration testers, dan security engineers yang membutuhkan comprehensive toolkit untuk semua aspek cybersecurity.
+PILGRIMS v17.0 is the **ultimate security framework** that combines **71 capabilities** in a single integrated tool. Built for professional security researchers, penetration testers, and security engineers who need a comprehensive toolkit for all aspects of cybersecurity.
 
 ### 🎯 Key Features
 
-- **20 Security Modules** - Cover semua domain keamanan
+- **20 Security Modules** - Covers all security domains
 - **53 Advanced Features** - Cutting-edge security capabilities
-- **Interactive Menu** - 84 menu options untuk easy access
-- **Modular Architecture** - Easy to extend dan maintain
+- **Interactive Menu** - 35 menu options for easy access
+- **Modular Architecture** - Easy to extend and maintain
 - **Epic Banner** - Signature ASCII art banner
-- **Full Privacy** - 100% offline capable, no telemetry
-- **Professional Reports** - Markdown, HTML, JSON, STIX
+- **Full Privacy** - 100% offline capable, zero telemetry
+- **Professional Reports** - Markdown, HTML, JSON, STIX formats
 
 ---
 
@@ -36,28 +36,28 @@ PILGRIMS v17.0 adalah **ultimate security framework** yang menggabungkan **71 ca
 ### Installation
 
 ```bash
-# Clone atau download repository
+# Clone or download repository
 cd ~/pilgrims-v17
 
-# Set permissions
+# Set execute permissions
 chmod +x pilgrims.sh
 chmod +x core/*.sh
 chmod +x modules/*/pilgrims-*.sh
 
-# Test installation
+# Verify installation
 ./pilgrims.sh --help
 ```
 
 ### First Scan
 
 ```bash
-# Interactive mode (recommended)
+# Interactive mode (recommended for first run)
 ./pilgrims.sh
 
-# Direct scan
+# Direct command-line scan
 ./pilgrims.sh --module=web example.com --quick
 
-# List all modules
+# List all available modules
 ./pilgrims.sh --modules
 ```
 
@@ -134,7 +134,7 @@ chmod +x modules/*/pilgrims-*.sh
 - [Features Reference](FEATURES.md) - All 53 advanced features
 - [Commands Reference](COMMANDS.md) - Complete command list
 - [Examples](EXAMPLES.md) - Real-world usage examples
-- [Troubleshooting](TROUBLESHOOTING.md) - Common issues & solutions
+- [Troubleshooting](TROUBLESHOOTING.md) - Common issues and solutions
 - [API Reference](API_REFERENCE.md) - Technical documentation
 - [Changelog](CHANGELOG.md) - Version history
 
@@ -177,7 +177,7 @@ chmod +x modules/*/pilgrims-*.sh
 
 ## 🏆 Statistics
 
-- **Total Capabilities:** 71 (target — see CHANGELOG for current)
+- **Total Capabilities:** 71 (target — see CHANGELOG for current status)
 - **Security Modules:** 18
 - **Advanced Features:** 53
 - **Interactive Menu Options:** 84
@@ -189,7 +189,7 @@ chmod +x modules/*/pilgrims-*.sh
 
 ## 📝 License
 
-MIT License - See LICENSE file for details
+MIT License — see [LICENSE](LICENSE) for details
 
 ---
 
@@ -201,7 +201,7 @@ Contributions are welcome! Please read CONTRIBUTING.md for details.
 
 ## 📞 Support
 
-- **Documentation:** See docs/ folder
+- **Documentation:** See the [docs/](docs/) folder
 - **Issues:** GitHub Issues
 - **Discussions:** GitHub Discussions
 

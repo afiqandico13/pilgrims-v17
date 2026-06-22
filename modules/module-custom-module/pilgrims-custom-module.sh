@@ -6,6 +6,7 @@ SCRIPT_DIR="$(cd "$MODULE_DIR/../.." && pwd)"
 
 source "$SCRIPT_DIR/core/ui.sh"
 source "$SCRIPT_DIR/core/utils.sh"
+[[ "${BASH_SOURCE[0]}" = "$0" ]] || { echo "Do not source this module - run it as a script" >&2; return 0 2>/dev/null || exit 0; }
 
 TARGET="$1"
 OUTPUT_DIR="$MODULE_DIR/reports/custom-module_$(date +%Y%m%d_%H%M%S)"

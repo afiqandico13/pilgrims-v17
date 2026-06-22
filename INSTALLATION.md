@@ -3,13 +3,13 @@
 ## System Requirements
 
 ### Minimum Requirements
-- **OS:** Linux (Ubuntu 20.04+, Debian 11+, Kali Linux) atau WSL2
+- **OS:** Linux (Ubuntu 20.04+, Debian 11+, Kali Linux) or WSL2
 - **RAM:** 4GB (8GB recommended)
 - **Storage:** 2GB free space
-- **Network:** Internet connection (optional, untuk online features)
+- **Network:** Internet connection (optional, for online features)
 
 ### Recommended Specifications
-- **OS:** Kali Linux 2024.1+ atau Ubuntu 22.04 LTS
+- **OS:** Kali Linux 2024.1+ or Ubuntu 22.04 LTS
 - **RAM:** 16GB
 - **Storage:** 10GB free space
 - **CPU:** 4+ cores
@@ -69,8 +69,8 @@ sudo apt install -y \
 mkdir -p ~/pilgrims-v17
 cd ~/pilgrims-v17
 
-# Download atau copy files
-# (Jika dari repository)
+# Download or copy files
+# (if from repository)
 git clone https://github.com/your-repo/pilgrims-v17.git .
 
 # Atau copy manual
